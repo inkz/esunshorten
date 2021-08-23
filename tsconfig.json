@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "paths":{
+      "escope": ["./src/@types/escope"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/tests/*"]
+}

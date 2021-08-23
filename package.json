@@ -1,0 +1,44 @@
+{
+  "name": "esunshorten",
+  "version": "0.0.1",
+  "description": "Unshorten (unminify) names in JavaScript code that was minified, the opposite of `esshorten` module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "tape -r ts-node/register tests/**/*.test.ts",
+    "coverage": "nyc npm run test",
+    "build": "tsc"
+  },
+  "prepare" : "npm run build",
+  "keywords": [],
+  "author": "Vasilii Ermilov",
+  "license": "ISC",
+  "files": [
+    "lib/**/*",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/esprima": "^4.0.3",
+    "@types/estraverse": "^5.1.1",
+    "@types/esutils": "^2.0.0",
+    "@types/node": "^16.6.1",
+    "@types/tape": "^4.13.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "esprima": "^4.0.1",
+    "nyc": "^15.1.0",
+    "tape": "^5.3.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "escope": "^3.6.0",
+    "estraverse": "^5.2.0",
+    "esutils": "^2.0.3"
+  }
+}
